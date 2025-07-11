@@ -22,7 +22,7 @@ cniConfig:
 
 nodes:
   - hostname: "tokio"
-    ipAddress: "10.0.0.30"
+    ipAddress: "10.0.1.30"
     installDisk: "/dev/vda"
     machineSpec:
       secureboot: false
@@ -33,7 +33,7 @@ nodes:
           hardwareAddr: "ba:5f:99:8b:b8:b7"
         dhcp: false
         addresses:
-          - "10.0.0.30/22"
+          - "10.0.1.30/22"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.0.1"
@@ -41,7 +41,7 @@ nodes:
         vip:
           ip: "10.0.1.40"
   - hostname: "osaka"
-    ipAddress: "10.0.0.31"
+    ipAddress: "10.0.1.31"
     installDisk: "/dev/vda"
     machineSpec:
       secureboot: false
@@ -52,13 +52,13 @@ nodes:
           hardwareAddr: "fa:a7:35:6b:de:91"
         dhcp: false
         addresses:
-          - "10.0.0.31/22"
+          - "10.0.1.31/22"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.0.1"
         mtu: 1500
   - hostname: "fukushima"
-    ipAddress: "10.0.0.32"
+    ipAddress: "10.0.1.32"
     installDisk: "/dev/vda"
     machineSpec:
       secureboot: false
@@ -69,7 +69,7 @@ nodes:
           hardwareAddr: "4a:66:67:6c:1c:12"
         dhcp: false
         addresses:
-          - "10.0.0.32/22"
+          - "10.0.1.32/22"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.0.1"
